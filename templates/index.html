@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Insights</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                💄 Cosmetics Insights
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/dashboard">Dashboard</a></li>
+
+                <li><a href="/story">Story</a></li>
+
+                <li><a href="/brands">Brands</a></li>
+
+            </ul>
+
+            <button class="btn" onclick="startRecommendation()">    Get Started</button>
+           
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-text">
+
+            <h1>Cosmetics Recommendation System</h1>
+
+            <p>
+                Discover skincare products perfectly matched to your
+                skin type using our Cosmetics Recommendation System.
+            </p>
+
+            <label>Select Your Skin Type</label>
+
+            <br><br>
+
+            <select id="skinType">
+
+                <option value="">Choose Skin Type</option>
+
+                <option value="dry">Dry Skin</option>
+
+                <option value="oily">Oily Skin</option>
+
+                <option value="combination">Combination Skin</option>
+
+                <option value="normal">Normal Skin</option>
+
+                <option value="sensitive">Sensitive Skin</option>
+
+            </select>
+
+            <br><br>
+
+            <button class="recommend-btn"
+                onclick="recommendProduct()">
+
+                Get Recommendation
+
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+
+
+        <div class="hero-image">
+
+            <img src="{{ url_for('static', filename='images/cosmetics.jpg') }}"
+                alt="Cosmetics">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= EXPLORE ================= -->
+
+    <section class="explore">
+
+        <h2>Explore Cosmetics Insights</h2>
+
+        <p>
+            Access interactive dashboards, stories and premium cosmetic
+            brands.
+        </p>
+
+        <div class="cards">
+
+            <!-- Dashboard -->
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>Dashboard</h3>
+
+                <p>
+                    Explore Tableau Dashboard with interactive visualizations.
+                </p>
+
+                <a href="/dashboard">
+                    <button>Explore</button>
+                </a>
+
+            </div>
+
+            <!-- Story -->
+
+            <div class="card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h3>Story</h3>
+
+                <p>
+                    View interactive Tableau Story and discover insights.
+                </p>
+
+                <a href="/story">
+                    <button>Explore</button>
+                </a>
+
+            </div>
+
+            <!-- Brands -->
+
+            <div class="card">
+
+                <i class="fa-solid fa-gem"></i>
+
+                <h3>Brands</h3>
+
+                <p>
+                    Explore premium skincare and cosmetic brands.
+                </p>
+
+                <a href="/brands">
+                    <button>Explore</button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= STATISTICS ================= -->
+
+    <section class="stats">
+
+        <h2>Discover Your Perfect Skincare Routine</h2>
+
+        <p>
+            Explore our cosmetics database with premium brands and
+            skincare products.
+        </p>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+
+                <h1>1472</h1>
+
+                <p>Products</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h1>116</h1>
+
+                <p>Brands</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h1>6</h1>
+
+                <p>Categories</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h1>5</h1>
+
+                <p>Skin Types</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURED BRANDS ================= -->
+
+    <section class="brands">
+
+        <h2>Featured Brands</h2>
+
+        <p>Some of the premium brands available in our dataset.</p>
+
+        <div class="brand-grid">
+
+            <div class="brand">ALGENIST</div>
+
+            <div class="brand">CLINIQUE</div>
+
+            <div class="brand">LANCOME</div>
+
+            <div class="brand">MURAD</div>
+
+            <div class="brand">NARS</div>
+
+            <div class="brand">SEPHORA</div>
+
+            <div class="brand">MAC</div>
+
+            <div class="brand">L'ORÉAL</div>
+
+        </div>
+
+        <br>
+
+        <a href="/brands">
+
+            <button class="btn">
+
+                View All Brands
+
+            </button>
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>💄 Cosmetics Insights</h3>
+
+        <p>
+
+            © 2026 Cosmetics Recommendation System
+
+        </p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story | Cosmetics Insights</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                💄 Cosmetics Insights
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/dashboard">Dashboard</a></li>
+
+                <li><a href="/story" class="active">Story</a></li>
+
+                <li><a href="/brands">Brands</a></li>
+
+            </ul>
+
+            <a href="/">
+                <button class="btn">Back to Home</button>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= STORY HEADER ================= -->
+
+    <section class="story-section">
+
+        <h1>📖 Cosmetics Insights Story</h1>
+
+        <p>
+            Explore an interactive Tableau Story that presents
+            meaningful insights about cosmetic products, brands,
+            customer ratings, ingredients, and skincare trends.
+        </p>
+
+    </section>
+
+    <!-- ================= TABLEAU STORY ================= -->
+
+    <section class="dashboard-box">
+
+        <h2>Interactive Tableau Story</h2>
+
+        <div class="tableau-container">
+
+            <div class='tableauPlaceholder' id='viz1783154212871' style='position: relative'>
+                <noscript><a href='#'><img alt='Story 1 '
+                            src='https://public.tableau.com/static/images/Co/CosmeticsInsightsStory_17828991118710/Story1/1_rss.png'
+                            style='border: none' /></a></noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='CosmeticsInsightsStory_17828991118710/Story1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https://public.tableau.com/static/images/Co/CosmeticsInsightsStory_17828991118710/Story1/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1783154212871');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '1016px';
+                vizElement.style.height = '991px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STORY HIGHLIGHTS ================= -->
+
+    <section class="explore">
+
+        <h2>Story Highlights</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <h3>Product Analysis</h3>
+
+                <p>
+                    Learn about cosmetic product distribution,
+                    categories, and popularity.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>Customer Ratings</h3>
+
+                <p>
+                    Discover highly rated products and customer
+                    preferences.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-tags"></i>
+
+                <h3>Brand Comparison</h3>
+
+                <p>
+                    Compare premium cosmetic brands based on
+                    quality and popularity.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h3>Skin Types</h3>
+
+                <p>
+                    Understand which products are suitable
+                    for different skin types.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= KEY INSIGHTS ================= -->
+
+    <section class="stats">
+
+        <h2>Key Insights</h2>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+
+                <h1>1472</h1>
+
+                <p>Products Analyzed</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h1>116</h1>
+
+                <p>Premium Brands</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h1>6</h1>
+
+                <p>Categories</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h1>5</h1>
+
+                <p>Skin Types</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Cosmetics Insights</h3>
+
+        <p>
+            © 2026 Cosmetics Recommendation System
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
